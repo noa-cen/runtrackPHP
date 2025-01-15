@@ -8,12 +8,12 @@
     <body>
     <?php 
         $str = "Dans l'espace, personne ne vous entend crier.";
+
         $i = 0;
-        while ($i < strlen($str)) {
-            echo $str[$i];
-            $i++;
+        while (isset($str[$i])) {
+            $i++ ;
         };
-        echo "<br /> Cette chaîne de caractère possède ".$i." caractères.";
+        echo "Cette chaîne de caractère possède ".$i." caractères.";
     ?>
     </body>
 </html>
