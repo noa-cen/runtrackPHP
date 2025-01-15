@@ -10,13 +10,15 @@
         $str = "I'm sorry Dave I'm afraid I can't do that.";
         $vowels = "aeiouyAEIOUY";
 
-        for ($i = 0; $i < strlen($str); $i++) {
-            for ($j = 0; $j < strlen(($vowels)); $j++) {
+        $i = 0;
+        while (isset($str[$i])) {
+            for ($j = 0; $j < strlen($vowels); $j++) {
                 if ($str[$i] == $vowels[$j]) {
-                    echo $str[$i]."<br />";
+                    echo $str[$i];
                 }
             }
-        };     
+            $i++ ;
+        };    
     ?>
     </body>
 </html>
