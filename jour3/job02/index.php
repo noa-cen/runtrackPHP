@@ -8,8 +8,10 @@
     <body>
     <?php 
         $str = "Tous ces instants seront perdus dans le temps comme les larmes sous la pluie.";
-        for ($x=0; $x<=strlen($str); $x+=2) {
-            echo $x."<br />";
+        $i = 0;
+        while (isset($str[$i])) {
+            echo $str[$i];
+            $i +=2 ;
         };
     ?>
     </body>
